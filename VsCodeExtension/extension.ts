@@ -8,7 +8,7 @@ import { getVHDLCompletion } from './languageModelService';
 let serverProcess: child_process.ChildProcess | null = null;
 
 function startServer(){
-	const command = './Documents/ECE465/test-hello-world/src/local-server/server_env/bin/python ./Documents/ECE465/test-hello-world/src/local-server/local-server.py';
+	const command = '<path to your python environment from ~ >/bin/python <path to local-server.py from ~>';
 	try{
 		serverProcess = child_process.spawn(command, { shell: true });
 		if(serverProcess.stdout){
