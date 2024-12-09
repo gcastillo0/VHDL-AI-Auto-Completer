@@ -1,11 +1,11 @@
-##### DISCLAIMER #####
+## DISCLAIMER
 This is a college project is not intended to be sold or used for commercial purposes. Is a project done by me in one semester, it is not a finish ready for deployment project is more of a big proof of concept to confirm that this has potential. Feel free to use this is a non-commercial way, please give credits if u use it. This is not a project for new users if you don't know Python programming or a little about LLM it could be difficult to move around is not an easy project to deploy
 
-##### SUMMARY #####
+## SUMMARY 
 
 You can implement this project with two forms, first doing the fine-tuning yourself and second just deploying the extension
 
-##### PROJECT INSTALLATION FOR FINE-TUNING#####
+## PROJECT INSTALLATION FOR FINE-TUNING
 -- PREVIOUS WORK --
 I used Ubuntu 22.04 for other OS i can't assure it will work.
 1. Get a HuggingFace account and an access token https://huggingface.co/
@@ -49,7 +49,7 @@ Now we have our docker uploaded and ready to deploy.(Recommended tag: latest). Y
 
 If you get the error of not enough space to allocate you probably need to get more or bigger GPUs
 
-##### VSCODE EXTENSION DEPLOYMENT #####
+## VSCODE EXTENSION DEPLOYMENT
 
 Right now the VSCODE extension can only use a Cloud server. The Local Server is needs more but you can try to make it work.
 
