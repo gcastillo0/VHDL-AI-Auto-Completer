@@ -80,7 +80,9 @@ https://7756-34-125-148-182.ngrok-free.app (be sure to add /generate after the u
 
 7. Run the extension and try it (right now it will be active in any plain text file).
 
-
+## My FINE-TUNED-MODEL URL
+(If you just want to try the extension you need this for colab)
+https://drive.google.com/drive/folders/1WQpmYLVVL65QcnFoxAlSNOJ5WtZYy6zj?usp=sharing
 ## Cite This Repository
 
 If you use this repository in your research or projects, please cite it as:
