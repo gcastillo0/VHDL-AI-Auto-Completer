@@ -51,20 +51,21 @@ If you get the error of not enough space to allocate you probably need to get mo
 
 ##### VSCODE EXTENSION DEPLOYMENT #####
 
-Right now the VSCODE extension can use a Local Server or a Cloud server. The Local Server is not tested and it is not guaranteed to work.
+Right now the VSCODE extension can only use a Cloud server. The Local Server is needs more but you can try to make it work.
 
--- LOCAL SERVER -- (HARDER)
+-- LOCAL SERVER -- (HARD)
 1. Create a vscode extension using this tutorial https://code.visualstudio.com/api/get-started/your-first-extension
 2. Add the files extension.ts and languageModelServide.ts to your src folder and also add the local-server folder to it 
-2. Go to src/extension.ts and uncomment line 45
-3. Go to languageModelService.ts and change the url in line 9 for your loopback address (probably 127.0.0.1) and port 5004-> https://127.0.01:5004/generate
-4. Compile the extension in the command line with 
+3. Go to src/extension.ts and uncomment line 45
+4. You will need to create a python env and add the path to the line 11 of extension.ts and download the local-server.py file and add the path to your model in it(line 8)
+5. Go to languageModelService.ts and change the url in line 9 for your loopback address (probably 127.0.0.1) and port 5004-> https://127.0.01:5004/generate
+6. Compile the extension in the command line with 
 
     npm run compile
 
 6. Run the extension and try it (right now it will be active in any plain text file).
 
--- CLOUD SERVER -- (EASIEST)
+-- CLOUD SERVER -- (EASy)
 1. Go to Google Colab and upload the notebook AIServer.ipynb
 2. Change the drive path in the last block to the path of your model in google drive (alternatively you can just upload the model manually to google colab).
 3. Create a vscode extension using this tutorial https://code.visualstudio.com/api/get-started/your-first-extension
