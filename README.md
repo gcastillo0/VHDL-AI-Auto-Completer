@@ -3,7 +3,7 @@ This is a college project is not intended to be sold or used for commercial purp
 
 ## SUMMARY 
 
-You can implement this project with two forms, first doing the fine-tuning yourself and second just deploying the extension
+This project implements the fine-tuning of a large language model (the case provided is GPT-NEO-125M) to use for vhdl code autocompletion.
 
 ## PROJECT INSTALLATION FOR FINE-TUNING
 ### PREVIOUS WORK
@@ -83,6 +83,12 @@ https://7756-34-125-148-182.ngrok-free.app (be sure to add /generate after the u
 ## My FINE-TUNED-MODEL URL
 (If you just want to try the extension you need this for colab)
 https://drive.google.com/drive/folders/1WQpmYLVVL65QcnFoxAlSNOJ5WtZYy6zj?usp=sharing
+
+## Dataset
+
+This project uses the [AI HDL Coder Dataset](https://huggingface.co/datasets/AWfaw/ai-hdlcoder-dataset) hosted on Hugging Face Datasets. If you use this dataset in your work, please consider citing it:
+
+
 ## Cite This Repository
 
 If you use this repository in your research or projects, please cite it as:
