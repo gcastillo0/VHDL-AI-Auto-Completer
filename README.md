@@ -6,7 +6,7 @@ This is a college project is not intended to be sold or used for commercial purp
 You can implement this project with two forms, first doing the fine-tuning yourself and second just deploying the extension
 
 ## PROJECT INSTALLATION FOR FINE-TUNING
--- PREVIOUS WORK --
+### PREVIOUS WORK
 I used Ubuntu 22.04 for other OS i can't assure it will work.
 1. Get a HuggingFace account and an access token https://huggingface.co/
 2. Get a Docker Hub account and an access token https://hub.docker.com/
@@ -33,7 +33,7 @@ Now we have our docker uploaded and ready to deploy.(Recommended tag: latest). Y
 ```
 7-Bis. If you have the resources in your computer and don't want to use docker just install the libraries of the docker file in your computer and run train2.py in your computer
 
--- FINE TUNING --
+### FINE TUNING
 
 1. Create an account on vast.ai
 2. Go to templates -> Create New template
@@ -53,7 +53,7 @@ If you get the error of not enough space to allocate you probably need to get mo
 
 Right now the VSCODE extension can only use a Cloud server. The Local Server is needs more but you can try to make it work.
 
--- LOCAL SERVER -- (HARD)
+### LOCAL SERVER -- (HARD)(NOT RECOMMENDED)
 1. Create a vscode extension using this tutorial https://code.visualstudio.com/api/get-started/your-first-extension
 2. Add the files extension.ts and languageModelServide.ts to your src folder and also add the local-server folder to it 
 3. Go to src/extension.ts and uncomment line 45
@@ -65,7 +65,7 @@ Right now the VSCODE extension can only use a Cloud server. The Local Server is 
 ```
 6. Run the extension and try it (right now it will be active in any plain text file).
 
--- CLOUD SERVER -- (EASy)
+### CLOUD SERVER -- (EASY)
 1. Go to Google Colab and upload the notebook AIServer.ipynb
 2. Change the drive path in the last block to the path of your model in google drive (alternatively you can just upload the model manually to google colab).
 3. Create a vscode extension using this tutorial https://code.visualstudio.com/api/get-started/your-first-extension
