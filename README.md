@@ -16,16 +16,19 @@ I used Ubuntu 22.04 for other OS i can't assure it will work.
 pip install --upgrade google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
 Steps 3 and 4 are to be able to download your fine-tuned-model to google drive if you are using any other storage system feel free to change it
+
 5. Get the vhdl_dataset file -> https://drive.google.com/file/d/1FYSe6CwuLMVAR4zJKzh1l3nzmKHqHyhl/view?usp=sharing
 6. Modify train2.py script and add in the token variable (line 11) your HUGGING FACE token.
 7. Install Docker in your computer (You may want to add your user to the docker group, otherwise you might need to use sudo) 
 8. Now we are ready to build. Make sure that dockerfile, train2.py, token.pickle are in the same folder you run this commands also vhdl_dataset.json has to be in a subfolder named dataset (If you now how to use docker feel free to modify the docker file):
-    
+
     docker login -u <your username> (It will prompt you for a password use the DOCKER TOKEN)
     docker build -t <image name>:<tag> .
     docker tag <image name>:<tag> <docker username>/<image name>:<tag>
     docker push <docker username>/<image name>:<tag>
+    
 Now we have our docker uploaded and ready to deploy.(Recommended tag: latest). You can test it or run it on your computer if you have the resources:
+    
     docker run v $(pwd):/workdir <image name>
 
 7-Bis. If you have the resources in your computer and don't want to use docker just install the libraries of the docker file in your computer and run train2.py in your computer
@@ -59,7 +62,7 @@ Right now the VSCODE extension can use a Local Server or a Cloud server. The Loc
 
     npm run compile
 
-5. Run the extension and try it (right now it will be active in any plain text file).
+6. Run the extension and try it (right now it will be active in any plain text file).
 
 -- CLOUD SERVER -- (EASIEST)
 1. Go to Google Colab and upload the notebook AIServer.ipynb
