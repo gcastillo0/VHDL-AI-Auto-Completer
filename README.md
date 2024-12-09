@@ -77,3 +77,18 @@ https://7756-34-125-148-182.ngrok-free.app (be sure to add /generate after the u
     npm run compile
 
 7. Run the extension and try it (right now it will be active in any plain text file).
+
+
+## Cite This Repository
+
+If you use this repository in your research or projects, please cite it as:
+
+```bibtex
+@misc{gcastillo2024vhdl,
+  author       = {Gonzalo Castillo},
+  title        = {VHDL-AI-Auto-Completer: A tool for AI-assisted VHDL code completion},
+  year         = {2024},
+  howpublished = {\url{https://github.com/gcastillo0/VHDL-AI-Auto-Completer/tree/main}},
+  note         = {GitHub repository},
+  url          = {https://github.com/gcastillo0/VHDL-AI-Auto-Completer/tree/main}
+}
