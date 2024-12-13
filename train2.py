@@ -8,7 +8,7 @@ from huggingface_hub import login
 LOCAL_MODEL_DIR = "./fine_tuned_model"
 print(torch.cuda.memory_allocated())
 def main():
-    token = "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"
+    token = "your token here"
     login(token)
     dataset_path = "vhdl_dataset.json"
     raw_dataset = Dataset.from_json(dataset_path)
